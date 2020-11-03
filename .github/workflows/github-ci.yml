@@ -1,0 +1,58 @@
+# This workflow will build a package using Maven and Jdk-11 under a docker image.
+# Then will dockerize the app and publish to artifactory repository.
+# For more information see: https://github.com/actions/setup-java#apache-maven-with-a-settings-path
+
+name: Maven Package And Dockerize
+
+on:
+  push:
+    branches: [ main ]
+    pull_request:
+      branches: [ main ]
+
+env:
+  DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
+  DOCKER_TAG: 0.0.12
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    container:
+      image: maven:3.6.3-openjdk-11
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build with Maven
+      run: mvn clean package -DskipTests
+    - name: Upload Jar Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: app.jar
+        path: target/*.jar
+        retention-days: 7
+    - name: Run Tests
+      run: mvn test
+    - name: Upload Test Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: tests.xml
+        path: target/surefire-reports/TEST-*.xml
+        retention-days: 7
+
+  push-docker-image:
+    runs-on: ubuntu-latest
+    needs: package
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          path: target/
+
+      - name: Docker login
+        run: echo ${{secrets.ARTIFACTORY_PASS}} | docker login http://docker.repo.dreamit.de --username ${{secrets.ARTIFACTORY_USER}} --password-stdin
+
+      - name: Build image
+        run: docker build --network host -t $DOCKER_IMAGE:$DOCKER_TAG -f ./docker/Dockerfile .
+
+      - name: Push image
+        run: docker push $DOCKER_IMAGE:$DOCKER_TAG
