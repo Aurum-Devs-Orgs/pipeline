@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
-  DOCKER_TAG: 0.0.17
+  DOCKER_TAG: 0.0.18
 
 jobs:
   package:
@@ -49,6 +49,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           path: target/
+          name: app.jar
 
       - name: Docker login
         run: echo ${{secrets.ARTIFACTORY_PASS}} | docker login http://docker.repo.dreamit.de --username ${{secrets.ARTIFACTORY_USER}} --password-stdin
