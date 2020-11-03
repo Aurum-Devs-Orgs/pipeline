@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo ls
+ls
 exec java \
     -jar \
-    /app.jar
+    /appsdfs.jar
