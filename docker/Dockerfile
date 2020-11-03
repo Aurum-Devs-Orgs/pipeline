@@ -11,7 +11,7 @@ COPY --chown=java:java docker/entrypoint.sh entrypoint.sh
 RUN chmod +x entrypoint.sh
 
 #APP WITH LOG
-COPY --chown=java:java ${JAR_FILE} /app.jar
+COPY --chown=java:java ${JAR_FILE} app.jar
 COPY --chown=java:java docker/logback.xml logback.xml
 
 EXPOSE 8080

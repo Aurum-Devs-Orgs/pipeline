@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
-  DOCKER_TAG: 0.0.12
+  DOCKER_TAG: 0.0.13
 
 jobs:
   package:

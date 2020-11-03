@@ -3,4 +3,4 @@ set -e
 
 exec java \
     -jar \
-    /app.jar
+    app.jar
