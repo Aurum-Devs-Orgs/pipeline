@@ -40,6 +40,8 @@ jobs:
 
   push-docker-image:
     runs-on: ubuntu-latest
+    container:
+      image: docker:19
     needs: package
     steps:
       - uses: actions/checkout@v2
