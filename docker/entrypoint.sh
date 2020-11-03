@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo
+echo ls
 exec java \
     -jar \
     /app.jar
