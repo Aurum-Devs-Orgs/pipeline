@@ -10,4 +10,8 @@ class HelloWorldApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void secondTest() {
+	}
+
 }
