@@ -54,6 +54,7 @@ jobs:
       run: |
           ls -l allure-results
           ls -l allure-reports
+          ls -la target
 
   push-docker-image:
     runs-on: ubuntu-latest
