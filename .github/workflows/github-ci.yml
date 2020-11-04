@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
-  DOCKER_TAG: 0.0.20
+  DOCKER_TAG: 0.0.21
 
 jobs:
   package:
@@ -31,17 +31,18 @@ jobs:
         retention-days: 7
     - name: Run Tests
       run: mvn test
-    - name: Upload Test Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: tests.xml
-        path: target/surefire-reports/TEST-*.xml
-        retention-days: 7
+#    - name: Upload Test Artifact
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: tests.xml
+#        path: target/surefire-reports/TEST-*.xml
+#        retention-days: 7
+
     - name: Allure report
       uses: afiore/action-allure-report@master
       with:
-        results-dir: results
-        report-dir: reports
+        results-dir: target/surefire-reports
+        report-dir: target/allure-reports
 
   push-docker-image:
     runs-on: ubuntu-latest
