@@ -41,19 +41,19 @@ jobs:
     - name: Create allure results directory content
       run: |
           mkdir allure-results
-          mkdir allure-reports
+          mkdir allure-report
           cp target/surefire-reports/* allure-results
 
     - name: Allure report
       uses: afiore/action-allure-report@master
       with:
         results-dir: allure-results
-        report-dir:  allure-reports
+        report-dir:  allure-report
 
     - name: List allure resulst and reports
       run: |
           ls -l allure-results
-          ls -l allure-reports
+          ls -l allure-report
           ls -la target
 
   push-docker-image:
