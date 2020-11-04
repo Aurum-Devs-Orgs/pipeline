@@ -1,0 +1,20 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "aurum.devs.helloworld.HelloWorldApplicationTests",
+    "children" : [ {
+      "name" : "contextLoads",
+      "uid" : "66b8c3f04659986e",
+      "parentUid" : "9428e892b3930b18403f9bd78d20d761",
+      "status" : "passed",
+      "time" : {
+        "duration" : 275
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9428e892b3930b18403f9bd78d20d761"
+  } ],
+  "name" : "suites"
+}
