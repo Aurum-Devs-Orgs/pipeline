@@ -42,7 +42,7 @@ jobs:
       run: |
           mkdir allure-results
           mkdir allure-reports
-          cp target/surefire-reports/*.xml allure-results
+          cp target/surefire-reports/* allure-results
 
     - name: Allure report
       uses: afiore/action-allure-report@master
