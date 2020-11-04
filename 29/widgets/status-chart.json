@@ -1,0 +1,17 @@
+[ {
+  "uid" : "29a319f49d4a65c0",
+  "name" : "secondTest",
+  "time" : {
+    "duration" : 353
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "367cbe1c9be83ae1",
+  "name" : "contextLoads",
+  "time" : {
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
