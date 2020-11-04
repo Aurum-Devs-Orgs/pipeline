@@ -2,22 +2,22 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
     "name" : "secondTest",
-    "uid" : "635247cffe728f92",
+    "uid" : "f58d0df0f9e4a283",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "duration" : 317
+      "duration" : 311
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "contextLoads",
-    "uid" : "e0292543750af53e",
+    "uid" : "18ecf72951582145",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "duration" : 2
+      "duration" : 6
     },
     "flaky" : false,
     "newFailed" : false,

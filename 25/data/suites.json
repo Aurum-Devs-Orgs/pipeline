@@ -3,23 +3,23 @@
   "children" : [ {
     "name" : "aurum.devs.helloworld.HelloWorldApplicationTests",
     "children" : [ {
-      "name" : "secondTest",
-      "uid" : "635247cffe728f92",
+      "name" : "contextLoads",
+      "uid" : "18ecf72951582145",
       "parentUid" : "9428e892b3930b18403f9bd78d20d761",
       "status" : "passed",
       "time" : {
-        "duration" : 317
+        "duration" : 6
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
-      "name" : "contextLoads",
-      "uid" : "e0292543750af53e",
+      "name" : "secondTest",
+      "uid" : "f58d0df0f9e4a283",
       "parentUid" : "9428e892b3930b18403f9bd78d20d761",
       "status" : "passed",
       "time" : {
-        "duration" : 2
+        "duration" : 311
       },
       "flaky" : false,
       "newFailed" : false,
