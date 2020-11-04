@@ -1,0 +1,31 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "aurum.devs.helloworld.HelloWorldApplicationTests",
+    "children" : [ {
+      "name" : "secondTest",
+      "uid" : "9c286d9c90c69352",
+      "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
+      "status" : "passed",
+      "time" : {
+        "duration" : 355
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "contextLoads",
+      "uid" : "e192a9308aad6bf6",
+      "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
+      "status" : "passed",
+      "time" : {
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "aurum.devs.helloworld.HelloWorldApplicationTests"
+  } ],
+  "name" : "packages"
+}
