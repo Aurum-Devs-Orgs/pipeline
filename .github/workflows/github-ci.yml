@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
-  DOCKER_TAG: 0.0.23
+  DOCKER_TAG: 0.0.25
 
 jobs:
   package:
@@ -23,12 +23,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build with Maven
       run: mvn clean package -DskipTests
-    - name: Upload Jar Artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: app.jar
-        path: target/*.jar
-        retention-days: 7
+#    - name: Upload Jar Artifact
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: app.jar
+#        path: target/*.jar
+#        retention-days: 7
     - name: Run Tests
       run: mvn test
 #    - name: Upload Test Artifact
@@ -49,6 +49,11 @@ jobs:
       with:
         results-dir: allure-results
         report-dir:  allure-reports
+
+    - name: List allure resulst and reports
+        run: |
+          ls -l allure-results
+          ls -l allure-reports
 
   push-docker-image:
     runs-on: ubuntu-latest
