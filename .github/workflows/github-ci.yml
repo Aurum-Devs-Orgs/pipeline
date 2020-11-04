@@ -36,6 +36,7 @@ jobs:
       run: |
           mkdir allure-results
           mkdir allure-report
+          mkdir allure-history
           cp target/surefire-reports/* allure-results
 
 #    - name: Allure report
