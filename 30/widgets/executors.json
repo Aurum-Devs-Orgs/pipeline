@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://Aurum-Devs-Orgs.github.io/pipeline",
+  "buildOrder" : 30,
+  "buildName" : "GitHub Actions Run #345904322",
+  "buildUrl" : "https://github.com/Aurum-Devs-Orgs/pipeline/actions/runs/345904322",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://Aurum-Devs-Orgs.github.io/pipeline/30/"
+} ]

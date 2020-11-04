@@ -1,0 +1,53 @@
+{
+  "uid" : "c998d30f36dcc81",
+  "name" : "secondTest",
+  "historyId" : "aurum.devs.helloworld.HelloWorldApplicationTests:aurum.devs.helloworld.HelloWorldApplicationTests#secondTest",
+  "time" : {
+    "duration" : 338
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fe188fe41747813d",
+      "name" : "System out",
+      "source" : "fe188fe41747813d.txt",
+      "type" : "text/plain",
+      "size" : 345
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "aurum.devs.helloworld.HelloWorldApplicationTests"
+  }, {
+    "name" : "testClass",
+    "value" : "aurum.devs.helloworld.HelloWorldApplicationTests"
+  }, {
+    "name" : "package",
+    "value" : "aurum.devs.helloworld.HelloWorldApplicationTests"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c998d30f36dcc81.json",
+  "parameterValues" : [ ]
+}

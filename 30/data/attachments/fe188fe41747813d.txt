@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: aurum.devs.helloworld.HelloWorldApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.979 s - in aurum.devs.helloworld.HelloWorldApplicationTests
