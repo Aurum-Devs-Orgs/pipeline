@@ -28,15 +28,9 @@ jobs:
 #      with:
 #        name: app.jar
 #        path: target/*.jar
-#        retention-days: 7
+#        retention-days: 1
     - name: Run Tests
       run: mvn test
-#    - name: Upload Test Artifact
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: tests.xml
-#        path: target/surefire-reports/TEST-*.xml
-#        retention-days: 7
 
     - name: Create allure results directory content
       run: |
@@ -50,11 +44,12 @@ jobs:
         results-dir: allure-results
         report-dir:  allure-report
 
-    - name: List allure resulst and reports
-      run: |
-          ls -l allure-results
-          ls -l allure-report
-          ls -la target
+    - name: Upload Test Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report
+        retention-days: 1
 
   push-docker-image:
     runs-on: ubuntu-latest
