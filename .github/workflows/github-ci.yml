@@ -12,7 +12,7 @@ on:
 
 env:
   DOCKER_IMAGE: docker.repo.dreamit.de/payments/aurum-dummy-hello-world
-  DOCKER_TAG: 0.0.21
+  DOCKER_TAG: 0.0.22
 
 jobs:
   package:
@@ -38,10 +38,15 @@ jobs:
 #        path: target/surefire-reports/TEST-*.xml
 #        retention-days: 7
 
+    - name: Create allure results directory content
+      run: |
+          mkdir target/allure-results
+          cp target/surefire-reports/*.xml target/allure-results
+
     - name: Allure report
       uses: afiore/action-allure-report@master
       with:
-        results-dir: target/surefire-reports
+        results-dir: target/allure-results
         report-dir: target/allure-reports
 
   push-docker-image:
