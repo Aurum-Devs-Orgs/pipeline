@@ -51,7 +51,7 @@ jobs:
         report-dir:  allure-reports
 
     - name: List allure resulst and reports
-        run: |
+      run: |
           ls -l allure-results
           ls -l allure-reports
 
