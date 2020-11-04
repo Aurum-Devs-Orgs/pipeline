@@ -1,31 +1,31 @@
 {
-  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "children" : [ {
     "name" : "aurum.devs.helloworld.HelloWorldApplicationTests",
     "children" : [ {
       "name" : "contextLoads",
-      "uid" : "4bdc43e7f877bcb8",
-      "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
+      "uid" : "38c9f9affa344c94",
+      "parentUid" : "9428e892b3930b18403f9bd78d20d761",
       "status" : "passed",
       "time" : {
-        "duration" : 6
+        "duration" : 2
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "secondTest",
-      "uid" : "785b8f46c98e0b7b",
-      "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
+      "uid" : "d43032bd29cf3b94",
+      "parentUid" : "9428e892b3930b18403f9bd78d20d761",
       "status" : "passed",
       "time" : {
-        "duration" : 254
+        "duration" : 383
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "aurum.devs.helloworld.HelloWorldApplicationTests"
+    "uid" : "9428e892b3930b18403f9bd78d20d761"
   } ],
-  "name" : "packages"
+  "name" : "suites"
 }

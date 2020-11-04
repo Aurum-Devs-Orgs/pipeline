@@ -9,11 +9,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "785b8f46c98e0b7b",
-      "reportUrl" : "https://Aurum-Devs-Orgs.github.io/pipeline/23//#testresult/785b8f46c98e0b7b",
+      "uid" : "d43032bd29cf3b94",
+      "reportUrl" : "https://Aurum-Devs-Orgs.github.io/pipeline/24//#testresult/d43032bd29cf3b94",
       "status" : "passed",
       "time" : {
-        "duration" : 254
+        "duration" : 383
       }
     } ]
   },
@@ -27,11 +27,11 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4bdc43e7f877bcb8",
-      "reportUrl" : "https://Aurum-Devs-Orgs.github.io/pipeline/23//#testresult/4bdc43e7f877bcb8",
+      "uid" : "38c9f9affa344c94",
+      "reportUrl" : "https://Aurum-Devs-Orgs.github.io/pipeline/24//#testresult/38c9f9affa344c94",
       "status" : "passed",
       "time" : {
-        "duration" : 6
+        "duration" : 2
       }
     } ]
   }

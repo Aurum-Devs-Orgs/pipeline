@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","","","2","","aurum.devs.helloworld.HelloWorldApplicationTests","","aurum.devs.helloworld.HelloWorldApplicationTests","","contextLoads",""
+"passed","","","383","","aurum.devs.helloworld.HelloWorldApplicationTests","","aurum.devs.helloworld.HelloWorldApplicationTests","","secondTest",""

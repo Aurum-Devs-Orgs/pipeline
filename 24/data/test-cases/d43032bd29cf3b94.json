@@ -1,9 +1,9 @@
 {
-  "uid" : "4bdc43e7f877bcb8",
-  "name" : "contextLoads",
-  "historyId" : "aurum.devs.helloworld.HelloWorldApplicationTests:aurum.devs.helloworld.HelloWorldApplicationTests#contextLoads",
+  "uid" : "d43032bd29cf3b94",
+  "name" : "secondTest",
+  "historyId" : "aurum.devs.helloworld.HelloWorldApplicationTests:aurum.devs.helloworld.HelloWorldApplicationTests#secondTest",
   "time" : {
-    "duration" : 6
+    "duration" : 383
   },
   "status" : "passed",
   "flaky" : false,
@@ -12,9 +12,9 @@
   "testStage" : {
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "35083cf382c4dd5a",
+      "uid" : "3a29add1e662989e",
       "name" : "System out",
-      "source" : "35083cf382c4dd5a.txt",
+      "source" : "3a29add1e662989e.txt",
       "type" : "text/plain",
       "size" : 345
     } ],
@@ -48,6 +48,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4bdc43e7f877bcb8.json",
+  "source" : "d43032bd29cf3b94.json",
   "parameterValues" : [ ]
 }
