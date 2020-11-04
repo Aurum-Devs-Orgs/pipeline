@@ -4,22 +4,22 @@
     "name" : "aurum.devs.helloworld.HelloWorldApplicationTests",
     "children" : [ {
       "name" : "contextLoads",
-      "uid" : "1f2f20443f702874",
+      "uid" : "d21bd2ff63d1dfb5",
       "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
       "status" : "passed",
       "time" : {
-        "duration" : 5
+        "duration" : 4
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "secondTest",
-      "uid" : "74c9e78bf3748922",
+      "uid" : "d3ca78600045405d",
       "parentUid" : "b9afb7179a7e60540ae77d36fd0297f7",
       "status" : "passed",
       "time" : {
-        "duration" : 268
+        "duration" : 339
       },
       "flaky" : false,
       "newFailed" : false,
