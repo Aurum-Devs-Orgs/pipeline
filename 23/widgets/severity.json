@@ -1,16 +1,16 @@
 [ {
-  "uid" : "98e012062b858e18",
+  "uid" : "785b8f46c98e0b7b",
   "name" : "secondTest",
   "time" : {
-    "duration" : 331
+    "duration" : 254
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d2f49fbcfb21c313",
+  "uid" : "4bdc43e7f877bcb8",
   "name" : "contextLoads",
   "time" : {
-    "duration" : 2
+    "duration" : 6
   },
   "status" : "passed",
   "severity" : "normal"
