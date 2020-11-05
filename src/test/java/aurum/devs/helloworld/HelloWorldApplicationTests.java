@@ -14,4 +14,9 @@ class HelloWorldApplicationTests {
 	void secondTest() {
 	}
 
+	@Test
+	void thirdTest() {
+	}
+
+
 }
